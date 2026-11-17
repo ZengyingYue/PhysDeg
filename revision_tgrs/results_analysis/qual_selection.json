@@ -1,0 +1,51 @@
+{
+ "realcloud": [
+  {
+   "stratum": "5-20%",
+   "image": "104_p482",
+   "gain_physdeg_minus_moddrop": 0.06840878752646723
+  },
+  {
+   "stratum": "20-50%",
+   "image": "49_p500",
+   "gain_physdeg_minus_moddrop": -8.754349864141227e-05
+  },
+  {
+   "stratum": "50-90%",
+   "image": "55_p45",
+   "gain_physdeg_minus_moddrop": 0.07241269936818556
+  },
+  {
+   "stratum": ">90%",
+   "image": "104_p265",
+   "gain_physdeg_minus_moddrop": 0.0658719469302114
+  }
+ ],
+ "suite": [
+  {
+   "row": "WHU\ncloud + shadow",
+   "image": "NH49E006019_512_3584.tif",
+   "index": 647
+  },
+  {
+   "row": "WHU\nphysical haze",
+   "image": "NH49E003024_3072_1536.tif",
+   "index": 413
+  },
+  {
+   "row": "WHU\noptical missing",
+   "image": "NH49E003024_2048_4096.tif",
+   "index": 398
+  },
+  {
+   "row": "EarthMiss\ncloud + shadow",
+   "image": "Japan-Hokkaido_clip_6_17.tif",
+   "index": 209
+  },
+  {
+   "row": "EarthMiss\nphysical haze",
+   "image": "Japan-Hokkaido_clip_5_18.tif",
+   "index": 191
+  }
+ ]
+}

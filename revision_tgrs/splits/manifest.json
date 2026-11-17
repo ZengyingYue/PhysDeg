@@ -1,0 +1,54 @@
+{
+  "whu_pad_v1": {
+    "note": "PAD seed-42 1400 test; 560 val carved from train with seed 4242",
+    "counts": {
+      "train": 5040,
+      "val": 560,
+      "test": 1400
+    },
+    "sha256": {
+      "train": "ca3615b8e6883ba5b0039124c5ee2c383e4a000ded3e44f448c4cb558d8576a4",
+      "val": "2533e7db65e144bf3ab1b81e7b4f45d39a75c843fbeda7916e1ea11b9b7d1f7b",
+      "test": "0ca52e2739b1903be4aa0477ce64ed470e83597c367a46f9c33d3bdc9a9e5bfa"
+    }
+  },
+  "whu_region_v1": {
+    "note": "source images 70/10/20, image permutation seed 42",
+    "counts": {
+      "train": 4900,
+      "val": 700,
+      "test": 1400
+    },
+    "sha256": {
+      "train": "03eb7cdf9cb5b01845e8da5134d7d9578ca3a7430fabfa889da73bdcc624c03b",
+      "val": "2aa61b68f71397497bfb22859d959b969462b0e121d4f21160fad83b0b967a90",
+      "test": "d2cdeebb88d416a49d3d3b75ab08dbf0f34204e1d197b761f378fc87f4f08fbf"
+    }
+  },
+  "earthmiss_v1": {
+    "note": "official city split",
+    "counts": {
+      "train": 2641,
+      "val": 277,
+      "test": 437
+    },
+    "sha256": {
+      "train": "75f29f4b5097a209dc04da2ec409460fa3b50144092155da329b664ccf3af043",
+      "val": "1f467c1c63cdf99560904f53fd4215d91b811675ffcc2290de3609a812309118",
+      "test": "bef62b419183e92ecda7d8b9e39e643f840fc504f90d60f567d182001beda4fb"
+    }
+  },
+  "oem_v1": {
+    "note": "seed-42 source-image heldout = test; equal-size source-image val carved from train with seed 4242",
+    "counts": {
+      "train": 13868,
+      "val": 1732,
+      "test": 1732
+    },
+    "sha256": {
+      "train": "0cee636b299a3b2e182517c984d6b558ad28863938230c0679ba3963bffd9ef0",
+      "val": "1c96f1e965dd1d64770f13a33ef5996a115d489b9093d6715cb09e7301312805",
+      "test": "954a43b3d43bbda4498250afb7e66d025d3ca16c90d2337b739f32105afcaaa8"
+    }
+  }
+}

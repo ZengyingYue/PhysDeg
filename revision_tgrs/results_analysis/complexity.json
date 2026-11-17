@@ -1,0 +1,90 @@
+{
+ "whu_moddrop": {
+  "params_m": 63.127687,
+  "gflops": 147.048103936,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "whu_pad": {
+  "params_m": 113.986899,
+  "gflops": 196.655153152,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "whu_shaspec": {
+  "params_m": 103.366153,
+  "gflops": 283.17843456,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "whu_metars": {
+  "params_m": 113.917261,
+  "gflops": 364.760743936,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "s12cr_moddrop": {
+  "params_m": 63.130952,
+  "gflops": 36.865835008,
+  "input": [
+   1,
+   5,
+   256,
+   256
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "s12cr_moddrop_relauxgp25uema": {
+  "params_m": 64.246345,
+  "gflops": 37.436391424,
+  "input": [
+   1,
+   5,
+   256,
+   256
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "whu_v4": {
+  "params_m": 151.527354,
+  "gflops": 329.239305728,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs)"
+ },
+ "whu_stars": {
+  "params_m": 219.233744,
+  "gflops": 760.17565696,
+  "input": [
+   1,
+   4,
+   512,
+   512
+  ],
+  "note": "FLOPs counted by torch.utils.flop_counter (one multiply-add = 2 FLOPs); STARS architecture from revision.s12cr_stars with sar_in_channels=1 (WHU input shape)"
+ }
+}

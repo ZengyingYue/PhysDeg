@@ -1,0 +1,16 @@
+{
+ "config": "revision.s12cr_moddrop_relauxgp25uema",
+ "seed": 42,
+ "split": "val",
+ "checkpoint": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_relauxgp25uema/seed_42/Last.pth",
+ "checkpoint_sha256": "53b06d7bea3ff3bf958de70ef86c3cd023642990b05a12610048b4267a03218f",
+ "evaluator_sha256": "a811a5ef2ae858baf64b8858754316ef8addbc4cb1b894174c5ee8b4882a9e32",
+ "patches": 2191,
+ "pixel_auroc_cloud": 0.8824489687504359,
+ "mean_rel": {
+  "in_cloud": 0.8501060258414243,
+  "out_cloud": 0.9873088925010162,
+  "clear": 0.9997152433391033
+ },
+ "spearman_unrel_vs_cover": 0.7699032584190233
+}

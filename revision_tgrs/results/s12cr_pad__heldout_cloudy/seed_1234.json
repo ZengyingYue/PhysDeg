@@ -1,0 +1,273 @@
+{
+ "config": "revision.s12cr_pad",
+ "seed": 1234,
+ "run_dir": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_pad/seed_1234",
+ "checkpoint": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_pad/seed_1234/Best.pth",
+ "checkpoint_sha256": "bcfc7261e4bb6700212eccc3f1a277dc730c6b0286d39b60e9d6c8dfec51e317",
+ "evaluator_sha256": "a44e158e4a65e659a702aa4c67352101da9cfc97db3d026dbcc987353e0ac1b3",
+ "best_checkpoint": {
+  "score": 0.2652785787010272,
+  "step": 16659,
+  "filename": "Best.pth",
+  "metric": "miou"
+ },
+ "split_manifest": {
+  "whu_pad_v1": {
+   "note": "PAD seed-42 1400 test; 560 val carved from train with seed 4242",
+   "counts": {
+    "train": 5040,
+    "val": 560,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "ca3615b8e6883ba5b0039124c5ee2c383e4a000ded3e44f448c4cb558d8576a4",
+    "val": "2533e7db65e144bf3ab1b81e7b4f45d39a75c843fbeda7916e1ea11b9b7d1f7b",
+    "test": "0ca52e2739b1903be4aa0477ce64ed470e83597c367a46f9c33d3bdc9a9e5bfa"
+   }
+  },
+  "whu_region_v1": {
+   "note": "source images 70/10/20, image permutation seed 42",
+   "counts": {
+    "train": 4900,
+    "val": 700,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "03eb7cdf9cb5b01845e8da5134d7d9578ca3a7430fabfa889da73bdcc624c03b",
+    "val": "2aa61b68f71397497bfb22859d959b969462b0e121d4f21160fad83b0b967a90",
+    "test": "d2cdeebb88d416a49d3d3b75ab08dbf0f34204e1d197b761f378fc87f4f08fbf"
+   }
+  },
+  "earthmiss_v1": {
+   "note": "official city split",
+   "counts": {
+    "train": 2641,
+    "val": 277,
+    "test": 437
+   },
+   "sha256": {
+    "train": "75f29f4b5097a209dc04da2ec409460fa3b50144092155da329b664ccf3af043",
+    "val": "1f467c1c63cdf99560904f53fd4215d91b811675ffcc2290de3609a812309118",
+    "test": "bef62b419183e92ecda7d8b9e39e643f840fc504f90d60f567d182001beda4fb"
+   }
+  },
+  "oem_v1": {
+   "note": "seed-42 source-image heldout = test; equal-size source-image val carved from train with seed 4242",
+   "counts": {
+    "train": 13868,
+    "val": 1732,
+    "test": 1732
+   },
+   "sha256": {
+    "train": "0cee636b299a3b2e182517c984d6b558ad28863938230c0679ba3963bffd9ef0",
+    "val": "1c96f1e965dd1d64770f13a33ef5996a115d489b9093d6715cb09e7301312805",
+    "test": "954a43b3d43bbda4498250afb7e66d025d3ca16c90d2337b739f32105afcaaa8"
+   }
+  }
+ },
+ "corruptions": {
+  "optical": {
+   "haze": [
+    0.1,
+    0.25,
+    0.4,
+    0.55,
+    0.7
+   ],
+   "noise": [
+    5.0,
+    10.0,
+    20.0,
+    35.0,
+    50.0
+   ],
+   "blur": [
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+   ],
+   "cloud": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "dark": [
+    0.7,
+    0.5,
+    0.3,
+    0.15,
+    0.05
+   ],
+   "stripe": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "localnoise": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ]
+  },
+  "sar": {
+   "speckle": [
+    16.0,
+    8.0,
+    4.0,
+    2.0,
+    1.0
+   ]
+  }
+ },
+ "conditions": {
+  "clean": {
+   "pixels": 134054599,
+   "miou": 0.15147724734192236,
+   "oa": 0.29419817219400285,
+   "per_class_iou": [
+    0.015051024555898488,
+    0.16481768782377562,
+    0.1429358502064826,
+    0.11527218524802212,
+    0.1580883153224763,
+    0.3143112581427646,
+    0.2830273421334096,
+    0.01831431530254957
+   ],
+   "ece15": 0.2875034432780297,
+   "nll": 2.07273100410626,
+   "brier": 0.8898665892795493,
+   "cwr_at_0.3_per_class": [
+    0.4501463942460696,
+    0.4944451267678185,
+    0.760032767262224,
+    0.5017162149323894,
+    0.7965216830581202,
+    0.6282708960280351,
+    0.6534232358952,
+    0.18685362710903927
+   ],
+   "msp": {
+    "aurc": 0.5848969745278182,
+    "sel_acc_at_80": 0.32309794214724186,
+    "error_auroc": 0.6390176620353193
+   },
+   "confusion": [
+    [
+     201802,
+     0,
+     84250,
+     70612,
+     4,
+     915,
+     1009,
+     18472
+    ],
+    [
+     3008200,
+     8362818,
+     3160049,
+     98352,
+     145080,
+     636,
+     1118467,
+     1554951
+    ],
+    [
+     8443616,
+     11315620,
+     8776412,
+     4306351,
+     423485,
+     158004,
+     4973225,
+     2273148
+    ],
+    [
+     72223,
+     2128,
+     331166,
+     1082063,
+     3260,
+     11262,
+     1789,
+     769717
+    ],
+    [
+     935107,
+     412882,
+     9221355,
+     1845977,
+     2941318,
+     248601,
+     130399,
+     1912379
+    ],
+    [
+     571344,
+     6539,
+     1663063,
+     682404,
+     150102,
+     2890566,
+     8100,
+     2804873
+    ],
+    [
+     304,
+     21554087,
+     6268935,
+     56443,
+     235588,
+     99,
+     14943071,
+     3505515
+    ],
+    [
+     0,
+     0,
+     2376,
+     53279,
+     0,
+     0,
+     239,
+     240568
+    ]
+   ],
+   "temperature_scaled": {
+    "temperature": 0.8016907572746277,
+    "ece15": 0.35384451255146293,
+    "nll": 2.3306475899827146,
+    "msp": {
+     "aurc": 0.5961798385209649,
+     "sel_acc_at_80": 0.3212620471957298,
+     "error_auroc": 0.6256868396523582
+    }
+   }
+  }
+ },
+ "test_key": "heldout_cloudy",
+ "test_images": 2907,
+ "temperature": {
+  "fuse": {
+   "T": 0.8016907572746277,
+   "val_pixels": 1043360
+  },
+  "sar": {
+   "T": 1.2697840929031372,
+   "val_pixels": 1043360
+  },
+  "rgb": {
+   "T": 0.9428682923316956,
+   "val_pixels": 1043360
+  }
+ }
+}

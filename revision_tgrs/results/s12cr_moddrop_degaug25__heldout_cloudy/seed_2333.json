@@ -1,0 +1,273 @@
+{
+ "config": "revision.s12cr_moddrop_degaug25",
+ "seed": 2333,
+ "run_dir": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_degaug25/seed_2333",
+ "checkpoint": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_degaug25/seed_2333/Best.pth",
+ "checkpoint_sha256": "b06d4ed93b5f780171dcc4f9350d36fbf14268180361786ad325fcbebe57b03b",
+ "evaluator_sha256": "a44e158e4a65e659a702aa4c67352101da9cfc97db3d026dbcc987353e0ac1b3",
+ "best_checkpoint": {
+  "score": 0.25146724347245053,
+  "step": 16659,
+  "filename": "Best.pth",
+  "metric": "miou"
+ },
+ "split_manifest": {
+  "whu_pad_v1": {
+   "note": "PAD seed-42 1400 test; 560 val carved from train with seed 4242",
+   "counts": {
+    "train": 5040,
+    "val": 560,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "ca3615b8e6883ba5b0039124c5ee2c383e4a000ded3e44f448c4cb558d8576a4",
+    "val": "2533e7db65e144bf3ab1b81e7b4f45d39a75c843fbeda7916e1ea11b9b7d1f7b",
+    "test": "0ca52e2739b1903be4aa0477ce64ed470e83597c367a46f9c33d3bdc9a9e5bfa"
+   }
+  },
+  "whu_region_v1": {
+   "note": "source images 70/10/20, image permutation seed 42",
+   "counts": {
+    "train": 4900,
+    "val": 700,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "03eb7cdf9cb5b01845e8da5134d7d9578ca3a7430fabfa889da73bdcc624c03b",
+    "val": "2aa61b68f71397497bfb22859d959b969462b0e121d4f21160fad83b0b967a90",
+    "test": "d2cdeebb88d416a49d3d3b75ab08dbf0f34204e1d197b761f378fc87f4f08fbf"
+   }
+  },
+  "earthmiss_v1": {
+   "note": "official city split",
+   "counts": {
+    "train": 2641,
+    "val": 277,
+    "test": 437
+   },
+   "sha256": {
+    "train": "75f29f4b5097a209dc04da2ec409460fa3b50144092155da329b664ccf3af043",
+    "val": "1f467c1c63cdf99560904f53fd4215d91b811675ffcc2290de3609a812309118",
+    "test": "bef62b419183e92ecda7d8b9e39e643f840fc504f90d60f567d182001beda4fb"
+   }
+  },
+  "oem_v1": {
+   "note": "seed-42 source-image heldout = test; equal-size source-image val carved from train with seed 4242",
+   "counts": {
+    "train": 13868,
+    "val": 1732,
+    "test": 1732
+   },
+   "sha256": {
+    "train": "0cee636b299a3b2e182517c984d6b558ad28863938230c0679ba3963bffd9ef0",
+    "val": "1c96f1e965dd1d64770f13a33ef5996a115d489b9093d6715cb09e7301312805",
+    "test": "954a43b3d43bbda4498250afb7e66d025d3ca16c90d2337b739f32105afcaaa8"
+   }
+  }
+ },
+ "corruptions": {
+  "optical": {
+   "haze": [
+    0.1,
+    0.25,
+    0.4,
+    0.55,
+    0.7
+   ],
+   "noise": [
+    5.0,
+    10.0,
+    20.0,
+    35.0,
+    50.0
+   ],
+   "blur": [
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+   ],
+   "cloud": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "dark": [
+    0.7,
+    0.5,
+    0.3,
+    0.15,
+    0.05
+   ],
+   "stripe": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "localnoise": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ]
+  },
+  "sar": {
+   "speckle": [
+    16.0,
+    8.0,
+    4.0,
+    2.0,
+    1.0
+   ]
+  }
+ },
+ "conditions": {
+  "clean": {
+   "pixels": 134054599,
+   "miou": 0.19552023730720197,
+   "oa": 0.28953924960082866,
+   "per_class_iou": [
+    0.008760391340225639,
+    0.1955336918753199,
+    0.11626283179316471,
+    0.1668422906943905,
+    0.2598515931495335,
+    0.5971651718406021,
+    0.17767559424418172,
+    0.04207033352019778
+   ],
+   "ece15": 0.36089372843262163,
+   "nll": 2.1920514265502504,
+   "brier": 0.9832887478439029,
+   "cwr_at_0.3_per_class": [
+    0.41356639721638766,
+    0.4537313208722809,
+    0.8161578668783747,
+    0.8074373418812741,
+    0.6200042973664238,
+    0.3220715390958017,
+    0.7972718519582127,
+    0.02769326254292287
+   ],
+   "msp": {
+    "aurc": 0.7076135571322111,
+    "sel_acc_at_80": 0.30032624084543214,
+    "error_auroc": 0.5441252229357444
+   },
+   "confusion": [
+    [
+     220244,
+     0,
+     435,
+     900,
+     2186,
+     1431,
+     76492,
+     75376
+    ],
+    [
+     4627044,
+     9401606,
+     2937436,
+     0,
+     284741,
+     0,
+     104770,
+     92956
+    ],
+    [
+     19182535,
+     7221334,
+     6995589,
+     152289,
+     4944268,
+     265834,
+     1390937,
+     517075
+    ],
+    [
+     419905,
+     1218,
+     192629,
+     415307,
+     6630,
+     26635,
+     40242,
+     1171042
+    ],
+    [
+     423712,
+     33906,
+     2907887,
+     43518,
+     6164747,
+     854628,
+     3297507,
+     3922113
+    ],
+    [
+     109815,
+     0,
+     170752,
+     8341,
+     451166,
+     5927271,
+     1437338,
+     672308
+    ],
+    [
+     0,
+     23376759,
+     13291468,
+     3166,
+     387098,
+     162,
+     9401052,
+     104337
+    ],
+    [
+     811,
+     0,
+     0,
+     7397,
+     0,
+     0,
+     2,
+     288252
+    ]
+   ],
+   "temperature_scaled": {
+    "temperature": 0.9673660397529602,
+    "ece15": 0.3708866643638645,
+    "nll": 2.2344007058899362,
+    "msp": {
+     "aurc": 0.7074559336708839,
+     "sel_acc_at_80": 0.3005708055066425,
+     "error_auroc": 0.5444873078909095
+    }
+   }
+  }
+ },
+ "test_key": "heldout_cloudy",
+ "test_images": 2907,
+ "temperature": {
+  "fuse": {
+   "T": 0.9673660397529602,
+   "val_pixels": 1043360
+  },
+  "sar": {
+   "T": 1.2548898458480835,
+   "val_pixels": 1043360
+  },
+  "rgb": {
+   "T": 1.2154035568237305,
+   "val_pixels": 1043360
+  }
+ }
+}

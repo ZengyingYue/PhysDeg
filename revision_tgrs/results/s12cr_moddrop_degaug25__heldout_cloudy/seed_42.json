@@ -1,0 +1,273 @@
+{
+ "config": "revision.s12cr_moddrop_degaug25",
+ "seed": 42,
+ "run_dir": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_degaug25/seed_42",
+ "checkpoint": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_degaug25/seed_42/Best.pth",
+ "checkpoint_sha256": "bfa120df7216be3da7417b7befab2c2794ca209d13d1572c8e614222f839f391",
+ "evaluator_sha256": "a44e158e4a65e659a702aa4c67352101da9cfc97db3d026dbcc987353e0ac1b3",
+ "best_checkpoint": {
+  "score": 0.2734793895138226,
+  "step": 19991,
+  "filename": "Best.pth",
+  "metric": "miou"
+ },
+ "split_manifest": {
+  "whu_pad_v1": {
+   "note": "PAD seed-42 1400 test; 560 val carved from train with seed 4242",
+   "counts": {
+    "train": 5040,
+    "val": 560,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "ca3615b8e6883ba5b0039124c5ee2c383e4a000ded3e44f448c4cb558d8576a4",
+    "val": "2533e7db65e144bf3ab1b81e7b4f45d39a75c843fbeda7916e1ea11b9b7d1f7b",
+    "test": "0ca52e2739b1903be4aa0477ce64ed470e83597c367a46f9c33d3bdc9a9e5bfa"
+   }
+  },
+  "whu_region_v1": {
+   "note": "source images 70/10/20, image permutation seed 42",
+   "counts": {
+    "train": 4900,
+    "val": 700,
+    "test": 1400
+   },
+   "sha256": {
+    "train": "03eb7cdf9cb5b01845e8da5134d7d9578ca3a7430fabfa889da73bdcc624c03b",
+    "val": "2aa61b68f71397497bfb22859d959b969462b0e121d4f21160fad83b0b967a90",
+    "test": "d2cdeebb88d416a49d3d3b75ab08dbf0f34204e1d197b761f378fc87f4f08fbf"
+   }
+  },
+  "earthmiss_v1": {
+   "note": "official city split",
+   "counts": {
+    "train": 2641,
+    "val": 277,
+    "test": 437
+   },
+   "sha256": {
+    "train": "75f29f4b5097a209dc04da2ec409460fa3b50144092155da329b664ccf3af043",
+    "val": "1f467c1c63cdf99560904f53fd4215d91b811675ffcc2290de3609a812309118",
+    "test": "bef62b419183e92ecda7d8b9e39e643f840fc504f90d60f567d182001beda4fb"
+   }
+  },
+  "oem_v1": {
+   "note": "seed-42 source-image heldout = test; equal-size source-image val carved from train with seed 4242",
+   "counts": {
+    "train": 13868,
+    "val": 1732,
+    "test": 1732
+   },
+   "sha256": {
+    "train": "0cee636b299a3b2e182517c984d6b558ad28863938230c0679ba3963bffd9ef0",
+    "val": "1c96f1e965dd1d64770f13a33ef5996a115d489b9093d6715cb09e7301312805",
+    "test": "954a43b3d43bbda4498250afb7e66d025d3ca16c90d2337b739f32105afcaaa8"
+   }
+  }
+ },
+ "corruptions": {
+  "optical": {
+   "haze": [
+    0.1,
+    0.25,
+    0.4,
+    0.55,
+    0.7
+   ],
+   "noise": [
+    5.0,
+    10.0,
+    20.0,
+    35.0,
+    50.0
+   ],
+   "blur": [
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+   ],
+   "cloud": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "dark": [
+    0.7,
+    0.5,
+    0.3,
+    0.15,
+    0.05
+   ],
+   "stripe": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ],
+   "localnoise": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+   ]
+  },
+  "sar": {
+   "speckle": [
+    16.0,
+    8.0,
+    4.0,
+    2.0,
+    1.0
+   ]
+  }
+ },
+ "conditions": {
+  "clean": {
+   "pixels": 134054599,
+   "miou": 0.19263110180520798,
+   "oa": 0.3078762184056065,
+   "per_class_iou": [
+    0.008754485965724998,
+    0.26268540437625015,
+    0.19287030334162797,
+    0.134435637543333,
+    0.20514811502075878,
+    0.5539815911649364,
+    0.11684191843494107,
+    0.06633135859409169
+   ],
+   "ece15": 0.35571872730324877,
+   "nll": 2.29624175950727,
+   "brier": 0.9755149682352127,
+   "cwr_at_0.3_per_class": [
+    0.5151459699149216,
+    0.40594437831033897,
+    0.6735090636282234,
+    0.8400322307099553,
+    0.7178805574654332,
+    0.3985147073752269,
+    0.8483020868334411,
+    0.2121587252329135
+   ],
+   "msp": {
+    "aurc": 0.6981489041232494,
+    "sel_acc_at_80": 0.3167114215813477,
+    "error_auroc": 0.5275815393821625
+   },
+   "confusion": [
+    [
+     182763,
+     0,
+     6598,
+     33,
+     1411,
+     406,
+     180021,
+     5832
+    ],
+    [
+     4518621,
+     10355444,
+     1943251,
+     0,
+     375082,
+     0,
+     181347,
+     74808
+    ],
+    [
+     15256379,
+     7285746,
+     13156235,
+     78999,
+     3169200,
+     180929,
+     1092080,
+     450293
+    ],
+    [
+     246847,
+     7596,
+     300730,
+     319662,
+     22879,
+     34785,
+     715160,
+     625949
+    ],
+    [
+     338657,
+     127404,
+     2295771,
+     10904,
+     4800263,
+     520424,
+     8093393,
+     1461202
+    ],
+    [
+     137606,
+     0,
+     129650,
+     6919,
+     549936,
+     5270531,
+     2628760,
+     53589
+    ],
+    [
+     0,
+     14552168,
+     22866999,
+     5247,
+     1632485,
+     375,
+     6953763,
+     553005
+    ],
+    [
+     1323,
+     0,
+     0,
+     2097,
+     0,
+     0,
+     59480,
+     233562
+    ]
+   ],
+   "temperature_scaled": {
+    "temperature": 0.8295688629150391,
+    "ece15": 0.4109898395639592,
+    "nll": 2.5946204303889404,
+    "msp": {
+     "aurc": 0.6978834288990063,
+     "sel_acc_at_80": 0.31615760536629167,
+     "error_auroc": 0.5267871452881911
+    }
+   }
+  }
+ },
+ "test_key": "heldout_cloudy",
+ "test_images": 2907,
+ "temperature": {
+  "fuse": {
+   "T": 0.8295688629150391,
+   "val_pixels": 1043360
+  },
+  "sar": {
+   "T": 1.1389864683151245,
+   "val_pixels": 1043360
+  },
+  "rgb": {
+   "T": 1.04507577419281,
+   "val_pixels": 1043360
+  }
+ }
+}

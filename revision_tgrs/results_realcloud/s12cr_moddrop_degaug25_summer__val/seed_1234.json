@@ -1,0 +1,63 @@
+{
+ "config": "revision.s12cr_moddrop_degaug25",
+ "seed": 1234,
+ "labels": "modis",
+ "no_fallback": false,
+ "dataset": "summer",
+ "checkpoint": "/media/yue/Data/earthmiss_baseline/unified_robust_exp/runs/revision_v1/s12cr_moddrop_degaug25/seed_1234/Best.pth",
+ "checkpoint_sha256": "4b56c9c29b763d37ea5578d2033b3876b9ac1e820bdc816664c74a481dbef67d",
+ "evaluator_sha256": "506cd74b479f388179437be490f341710b6b61ba206c8c593437bcb1e73e5005",
+ "test_patches": 2157,
+ "label_miou": {
+  "label_clear": 0.333883194047799,
+  "label_cloudy": 0.3337521483142998,
+  "label_sar": 0.352219772865796
+ },
+ "consistency_miou": {
+  "all": 0.3424664714403282,
+  "in_cloud": 0.2063500477361602,
+  "out_cloud": 0.39431355376182836,
+  "sar_all": 0.35911530901701083
+ },
+ "consistency_agreement": {
+  "all": 0.7669817376700495,
+  "in_cloud": 0.5460538828061684,
+  "out_cloud": 0.8346383831713924,
+  "sar_all": 0.7559606616674998
+ },
+ "route_fraction_cloudy": [
+  1.0,
+  0.0,
+  0.0
+ ],
+ "per_cloud_bin": {
+  "0.00-0.05": {
+   "patches": 979,
+   "consistency_miou": 0.5344499959595306,
+   "label_miou_cloudy": 0.3625102481620572,
+   "label_miou_clear": 0.3401065361446727,
+   "sar_fallback": 0.0
+  },
+  "0.05-0.20": {
+   "patches": 413,
+   "consistency_miou": 0.3567850715216805,
+   "label_miou_cloudy": 0.33833088202018574,
+   "label_miou_clear": 0.30822059333487073,
+   "sar_fallback": 0.0
+  },
+  "0.20-0.50": {
+   "patches": 341,
+   "consistency_miou": 0.24292876067892336,
+   "label_miou_cloudy": 0.28591598004578733,
+   "label_miou_clear": 0.30302140390929,
+   "sar_fallback": 0.0
+  },
+  "0.50-1.01": {
+   "patches": 424,
+   "consistency_miou": 0.19731080812413,
+   "label_miou_cloudy": 0.26585364378743487,
+   "label_miou_clear": 0.3779912190967193,
+   "sar_fallback": 0.0
+  }
+ }
+}

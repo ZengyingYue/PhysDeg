@@ -1,0 +1,718 @@
+[
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_moddrop",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 2.8704725963819,
+  "diff_per_seed": [
+   10.707259849477643,
+   -2.7005734371641887,
+   0.6047313768322488
+  ],
+  "ci95": [
+   -2.589414174932188,
+   10.509077213872196
+  ],
+  "p_two_sided": 0.511,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-md.cloudy",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_moddrop_degaug25",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 2.667261839176515,
+  "diff_per_seed": [
+   4.447976931289799,
+   1.4590731332410707,
+   2.094735452998675
+  ],
+  "ci95": [
+   1.255382697557741,
+   4.347335072215154
+  ],
+  "p_two_sided": 0.0002,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-gen.cloudy",
+  "label": "\\method{} vs ModDrop + Generic",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_pad",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 7.0135421211327476,
+  "diff_per_seed": [
+   10.31786404456585,
+   5.54731556175174,
+   5.175446757080654
+  ],
+  "ci95": [
+   4.719973344938078,
+   10.140679316569905
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-pad.cloudy",
+  "label": "\\method{} vs PAD",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_shaspec",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 5.912370543955485,
+  "diff_per_seed": [
+   13.015587778388419,
+   5.783023285685937,
+   -1.0614994322079019
+  ],
+  "ci95": [
+   -0.8114526651306908,
+   12.839457808917052
+  ],
+  "p_two_sided": 0.0702,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-sha.cloudy",
+  "label": "\\method{} vs ShaSpec",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_metars",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 7.060687795422182,
+  "diff_per_seed": [
+   7.481070303449833,
+   5.907738216890568,
+   7.793254865926144
+  ],
+  "ci95": [
+   5.564096372154161,
+   8.443044254576687
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-meta.cloudy",
+  "label": "\\method{} vs MetaRS",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_stars_lr1e4",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 9.795245284931026,
+  "diff_per_seed": [
+   14.117267931377594,
+   6.980602884706094,
+   8.28786503870939
+  ],
+  "ci95": [
+   6.670863907498457,
+   13.868941468973393
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-stars.cloudy",
+  "label": "\\method{} vs STARS",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_pad_gp25",
+  "b": "s12cr_pad",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 13.826551054255498,
+  "diff_per_seed": [
+   12.80303181674764,
+   14.855332200655866,
+   13.821289145362991
+  ],
+  "ci95": [
+   12.324719397183468,
+   15.409739768511685
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.padgp-pad.cloudy",
+  "label": "PAD + \\method{} vs PAD",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_shaspec_gp25",
+  "b": "s12cr_shaspec",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 9.409047728338901,
+  "diff_per_seed": [
+   15.352736790969198,
+   10.062245056784944,
+   2.8121613372625616
+  ],
+  "ci95": [
+   3.088763234880753,
+   15.179961831591323
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.shagp-sha.cloudy",
+  "label": "ShaSpec + \\method{} vs ShaSpec",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_metars_gp25",
+  "b": "s12cr_metars",
+  "metrics": [
+   "cloudy"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 6.88526875986053,
+  "diff_per_seed": [
+   5.4193752230385694,
+   5.058200742290703,
+   10.178230314252316
+  ],
+  "ci95": [
+   4.559720579614289,
+   9.863930642606656
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.metagp-meta.cloudy",
+  "label": "MetaRS + \\method{} vs MetaRS",
+  "metric_label": "Label cloudy",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_moddrop",
+  "metrics": [
+   "in_cloud"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 21.944603600055313,
+  "diff_per_seed": [
+   27.201891180738823,
+   18.662357332615887,
+   19.96956228681122
+  ],
+  "ci95": [
+   18.32857729949561,
+   26.908397675951424
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-md.in_cloud",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "Cons.\\ in-cloud",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_moddrop_degaug25",
+  "metrics": [
+   "in_cloud"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 3.764032859754559,
+  "diff_per_seed": [
+   5.448515835554907,
+   9.729765536226736,
+   -3.886182792517967
+  ],
+  "ci95": [
+   -3.458609526880068,
+   9.555382376039608
+  ],
+  "p_two_sided": 0.293,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-gen.in_cloud",
+  "label": "\\method{} vs ModDrop + Generic",
+  "metric_label": "Cons.\\ in-cloud",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "s12cr_moddrop_gp25",
+  "b": "s12cr_moddrop",
+  "metrics": [
+   "clear"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 5,
+  "images": 2907,
+  "resamples": 10000,
+  "diff_mean": 0.7273239328305406,
+  "diff_per_seed": [
+   1.4267017860489895,
+   1.881682361815229,
+   -1.1264123493725964
+  ],
+  "ci95": [
+   -0.9301217550832364,
+   2.1536804706269366
+  ],
+  "p_two_sided": 0.4042,
+  "dataset": "SEN12MS-CR",
+  "key": "s12cr.gp-md.clear",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "Label clear",
+  "unit_label": "images within 5 ROIs"
+ },
+ {
+  "a": "whupad_moddrop_gp25",
+  "b": "whupad_moddrop",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "group",
+  "seeds_resampled": true,
+  "groups": 20,
+  "images": 1400,
+  "resamples": 10000,
+  "diff_mean": 10.094590092221472,
+  "diff_per_seed": [
+   9.673960982187074,
+   9.964750603824779,
+   10.645058690652565
+  ],
+  "ci95": [
+   8.85205905384631,
+   11.355029622666471
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "WHU-OPT-SAR",
+  "key": "whupad.gp-md.Ropt",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "source images (20)"
+ },
+ {
+  "a": "whupad_moddrop_gp25",
+  "b": "whupad_moddrop_degaug25",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "group",
+  "seeds_resampled": true,
+  "groups": 20,
+  "images": 1400,
+  "resamples": 10000,
+  "diff_mean": 3.9349190767229167,
+  "diff_per_seed": [
+   3.9930672032450545,
+   4.151336149938905,
+   3.66035387698479
+  ],
+  "ci95": [
+   3.3107231179858623,
+   4.59793916320659
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "WHU-OPT-SAR",
+  "key": "whupad.gp-gen.Ropt",
+  "label": "\\method{} vs ModDrop + Generic",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "source images (20)"
+ },
+ {
+  "a": "whupad_moddrop_gp25",
+  "b": "whupad_pad",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "group",
+  "seeds_resampled": true,
+  "groups": 20,
+  "images": 1400,
+  "resamples": 10000,
+  "diff_mean": 14.423112146389178,
+  "diff_per_seed": [
+   13.406465258807215,
+   13.704979337258234,
+   16.15789184310209
+  ],
+  "ci95": [
+   12.290262946387454,
+   16.62367867350738
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "WHU-OPT-SAR",
+  "key": "whupad.gp-pad.Ropt",
+  "label": "\\method{} vs PAD",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "source images (20)"
+ },
+ {
+  "a": "whupad_moddrop_gp25",
+  "b": "whupad_shaspec",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "group",
+  "seeds_resampled": true,
+  "groups": 20,
+  "images": 1400,
+  "resamples": 10000,
+  "diff_mean": 13.12589507884519,
+  "diff_per_seed": [
+   13.17910231310082,
+   13.058702349026486,
+   13.139880574408263
+  ],
+  "ci95": [
+   11.632825016992783,
+   14.589255276834242
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "WHU-OPT-SAR",
+  "key": "whupad.gp-sha.Ropt",
+  "label": "\\method{} vs ShaSpec",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "source images (20)"
+ },
+ {
+  "a": "whupad_moddrop_gp25",
+  "b": "whupad_moddrop",
+  "metrics": [
+   "clean",
+   "missing_optical",
+   "missing_sar"
+  ],
+  "folder": "perimg_test",
+  "unit": "group",
+  "seeds_resampled": true,
+  "groups": 20,
+  "images": 1400,
+  "resamples": 10000,
+  "diff_mean": 0.05299555590063676,
+  "diff_per_seed": [
+   0.07390588855337166,
+   -0.0644460597020502,
+   0.14952683885058882
+  ],
+  "ci95": [
+   -0.23311875241498697,
+   0.31527941870579673
+  ],
+  "p_two_sided": 0.7266,
+  "dataset": "WHU-OPT-SAR",
+  "key": "whupad.gp-md.M",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "$M$",
+  "unit_label": "source images (20)"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_moddrop",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": 18.48983340502161,
+  "diff_per_seed": [
+   19.136819417016113,
+   17.86791523894919,
+   18.464765559099522
+  ],
+  "ci95": [
+   17.368103904008326,
+   19.611092566542077
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "EarthMiss",
+  "key": "em.gp-md.Ropt",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "images within 3 cities"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_moddrop_degaug25",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": 12.806971116403796,
+  "diff_per_seed": [
+   11.61177013130757,
+   13.764366924865762,
+   13.044776293038057
+  ],
+  "ci95": [
+   11.515796535324535,
+   14.05358511470377
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "EarthMiss",
+  "key": "em.gp-gen.Ropt",
+  "label": "\\method{} vs ModDrop + Generic",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "images within 3 cities"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_pad",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": 20.47995978103412,
+  "diff_per_seed": [
+   22.0289782468486,
+   16.933317417022252,
+   22.477583679231508
+  ],
+  "ci95": [
+   17.1851614403049,
+   22.959629669224295
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "EarthMiss",
+  "key": "em.gp-pad.Ropt",
+  "label": "\\method{} vs PAD",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "images within 3 cities"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_shaspec",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": 21.091526328193368,
+  "diff_per_seed": [
+   24.64887228981915,
+   17.5333109254229,
+   21.09239576933805
+  ],
+  "ci95": [
+   17.634989321390684,
+   24.494434836336268
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "EarthMiss",
+  "key": "em.gp-sha.Ropt",
+  "label": "\\method{} vs ShaSpec",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "images within 3 cities"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_metars",
+  "metrics": [
+   "phys_haze@3",
+   "phys_haze@4",
+   "phys_haze@5",
+   "phys_cloudshadow@3",
+   "phys_cloudshadow@4",
+   "phys_cloudshadow@5"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": 9.14125941198166,
+  "diff_per_seed": [
+   10.77011155776852,
+   10.831791788077593,
+   5.821874890098866
+  ],
+  "ci95": [
+   5.9970899194733445,
+   11.49314337339198
+  ],
+  "p_two_sided": 0.0,
+  "dataset": "EarthMiss",
+  "key": "em.gp-meta.Ropt",
+  "label": "\\method{} vs MetaRS",
+  "metric_label": "$R_{\\mathrm{opt}}$",
+  "unit_label": "images within 3 cities"
+ },
+ {
+  "a": "em_moddrop_gp25",
+  "b": "em_moddrop",
+  "metrics": [
+   "clean",
+   "missing_optical",
+   "missing_sar"
+  ],
+  "folder": "perimg_test",
+  "unit": "image-within-group",
+  "seeds_resampled": true,
+  "groups": 3,
+  "images": 437,
+  "resamples": 10000,
+  "diff_mean": -0.028698634182061717,
+  "diff_per_seed": [
+   2.288939795292505,
+   -0.6646506762823468,
+   -1.7103850215563432
+  ],
+  "ci95": [
+   -1.7308742387940292,
+   2.1365751809587867
+  ],
+  "p_two_sided": 0.9154,
+  "dataset": "EarthMiss",
+  "key": "em.gp-md.M",
+  "label": "\\method{} vs ModDrop",
+  "metric_label": "$M$",
+  "unit_label": "images within 3 cities"
+ }
+]
